@@ -13,14 +13,14 @@
 /layouts
 /scss
 .jshintrc
-bower.json
-content-none.php
-content-page.php
-content-search.php
-content-single.php
-content.php
-gulpfile.json
-package.json
-rtl.css
+/bower.json
+/content-none.php
+/content-page.php
+/content-search.php
+/content-single.php
+/content.php
+/gulpfile.json
+/package.json
+/rtl.css
 
 
