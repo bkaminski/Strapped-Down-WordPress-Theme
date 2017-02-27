@@ -1,18 +1,23 @@
 /*
 Theme Name: Strapped Down
-Theme URI: http://wordpress.org/themes/twentythirteen
-Author: the WordPress team
-Author URI: http://wordpress.org/
-Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
-Version: 1.0
+Theme URI: https://github.com/bkaminski/Strapped-Down-WordPress-Theme
+Author: Ben Kaminski (Web Solutions Services LLC)
+Author URI: https://websolutionsservices.com
+Description: The Strapped Down Theme is designed for a wide array of use cases. From a start up business website or a restaurant/bar, to a blogger and beyond. Strapped Down is built on a solid foundation of technologies (React.js, Node.js, Bootstrap) and includes easy to update "Theme Customizer" functionality. I would like to thank the good people at Codeable.io for creating a starter theme for WordPress with a built in Gulp workflow.<a target="_blank" href="https://codeable.io/introducing-sip-a-starter-theme-with-gulp-workflow/">Theme developers, Read this article!</a>.
+Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Text Domain: twentythirteen
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Tags: Wordpress Themes, Strapped Down, Strapped Down WordPres Theme, Responsive WordPress Theme, Free Responsive WordPress Theme, Bootstrap, Node.js, React.js, ES6, php7, JS, jQuery
+Text Domain: strapped_down
 */
 body {
   font: 100% Helvetica, sans-serif;
-  background-color: #e9e9e9; }
+  background-color: #333;
+  padding-top: 90px; }
+
+.navbar {
+  min-height: 90px;
+  padding-top: 20px; }
+
+.alert {
+  border-radius: 0px !important; }
