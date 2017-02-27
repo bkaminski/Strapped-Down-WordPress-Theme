@@ -12,7 +12,7 @@
 /languages
 /layouts
 /scss
-.jshintrc
+/.jshintrc
 /bower.json
 /content-none.php
 /content-page.php
