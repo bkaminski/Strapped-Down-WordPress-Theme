@@ -15,16 +15,28 @@
         <?php wp_head(); ?>
     </head>
         <body <?php body_class(); ?>>
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div class="container">
-                    <a class="navbar-brand" href="#">Title</a>
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">Link</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <header>
+                <nav class="navbar navbar-default navbar-fixed-top">
+                  <div class="container">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/" alt="" width="70" class=""></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <?php wp_nav_menu(array(
+                                'menu'              => 'top_nav',
+                                'theme_location'    => 'top_nav',
+                                'depth'             => 2,
+                                'container'         => 'div',
+                                'container_class'   => 'text-uppercase',
+                                'menu_class'        => 'nav navbar-nav',
+                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                'walker'            => new wp_bootstrap_navwalker())); ?>
+                    </div>
+                  </div>
+                </nav>

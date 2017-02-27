@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<br />
     <header>
         <div class="jumbotron">
             <div class="container">

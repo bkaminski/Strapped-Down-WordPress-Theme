@@ -181,7 +181,3 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu
         }
     }
 }
-
-    Contact GitHub API Training Shop Blog About
-
-    © 2017 GitHub, Inc. Terms Privacy Security Status Help
