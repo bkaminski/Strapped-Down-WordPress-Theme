@@ -1,3 +1,5 @@
 <?php get_header(); ?>
-    <div id="jumboTRON"></div> 
+    <section>
+        <div id="jumboTRON"></div>
+    </section> 
 <?php get_footer(); ?>

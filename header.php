@@ -22,7 +22,7 @@
                         <span class="sr-only">Toggle navigation</span>
                         <i class="fa fa-bars fa-fw fa-2x" aria-hidden="true"></i>
                       </button>
-                      <a class="navbar-brand" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
+                      <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><i class="fa fa-home" aria-hidden="true"></i></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <?php wp_nav_menu(array(
