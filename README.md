@@ -1,4 +1,4 @@
-# Strapped Down, a WordPress theme with Gulp and Sass
+# Strapped Down, a WordPress theme with React, Node, Gulp, and more.
 
 
 ### No Stable Release

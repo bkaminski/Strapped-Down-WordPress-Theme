@@ -6,11 +6,8 @@ var TimeElapsedApplication = React.createClass({
 
         return <div className="alert alert-info">
                   <center>
-                    <span className="text-center">
-                      <i className="fa fa-clock-o fa-fw fa-2x fa-spin" aria-hidden="true"></i>
-                      <strong>{message}</strong>
-                  </span>
-                 </center>
+                    <h4><i className="fa fa-circle-o-notch fa-fw fa-lg fa-spin" aria-hidden="true"></i> {message}</h4>
+                  </center>
                </div>
       }
   });
@@ -19,3 +16,4 @@ setInterval(function () {
     ReactDOM.render(
         <TimeElapsedApplication elapsed={new Date().getTime() - start}/>, document.getElementById('testHead'));
 }, 50);
+

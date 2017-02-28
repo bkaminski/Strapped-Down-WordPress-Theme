@@ -15,15 +15,12 @@
         <?php wp_head(); ?>
     </head>
         <body <?php body_class(); ?>>
-            <header>
-                <nav class="navbar navbar-default navbar-fixed-top">
-                  <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
                     <div class="navbar-header">
                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <i class="fa fa-bars fa-fw fa-2x" aria-hidden="true"></i>
                       </button>
                       <a class="navbar-brand" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
                     </div>
@@ -36,8 +33,10 @@
                                 'container_class'   => 'text-uppercase',
                                 'menu_class'        => 'nav navbar-nav',
                                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                'walker'            => new wp_bootstrap_navwalker())); ?>
+                                'walker'            => new wp_bootstrap_navwalker()
+                                )
+                        ); ?>
                     </div>
-                  </div>
-                </nav>
-                <div id="testHead"></div>
+                </div>
+            </nav>
+            

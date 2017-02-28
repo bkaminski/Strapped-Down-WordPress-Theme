@@ -15,9 +15,13 @@ body {
   background-color: #333;
   padding-top: 90px; }
 
+/* Globals */
 .navbar {
   min-height: 90px;
   padding-top: 20px; }
 
 .alert {
   border-radius: 0px !important; }
+
+.fa {
+  vertical-align: middle; }
