@@ -13,21 +13,22 @@ Text Domain: strapped_down
 /* Globals */
 body {
   font: 100% Helvetica, sans-serif;
-  padding-top: 0;
+  padding-top: 50px;
   background-color: #333; }
 
 /* Bootstrap 4 Alpha 6 Overrides */
 .navbar {
   min-height: 90px;
-  padding-top: 20px;
+  padding-top: 8px;
   border-radius: 0; }
 
 .navbar-nav {
   padding-top: 4px; }
 
 .alert,
+.card,
 .jumbotron {
-  border-radius: 0 !important; }
+  border-radius: 0; }
 
 /* FontAwesome */
 .fa {
