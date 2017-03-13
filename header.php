@@ -28,11 +28,10 @@
                             ); ?>
                             <form class="form-inline my-2 my-lg-0">
                                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+                                    <i class="fa fa-search fa-fw fa-lg" aria-hidden="true"></i>
+                                </button>
                             </form>
                         </div>
                    
-            </nav>
-                        
-                   
-            
+            </nav>           

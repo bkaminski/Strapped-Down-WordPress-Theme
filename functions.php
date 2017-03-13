@@ -5,7 +5,6 @@ function enqueue_strapped_down_scripts()
     wp_enqueue_script('react-js', '//unpkg.com/react@15.3.2/dist/react.min.js', array(), null, null);
     wp_enqueue_script('react-dom', '//unpkg.com/react-dom@15.3.2/dist/react-dom.min.js', array(), null, null);
     wp_enqueue_script('babel-core', '//unpkg.com/babel-core@5.8.38/browser.min.js', array(), null, null);
-    wp_enqueue_script('jQuery-slim-min', '//code.jquery.com/jquery-3.1.1.slim.min.js', array('jquery'), null, true);
     wp_enqueue_script('CloudFlare-Tether', '//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', array(), null, true);
     wp_enqueue_script('bootstrap4a6-js-cdn', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', array('jquery'), null, true);
     wp_enqueue_script('strapped-down-js', get_template_directory_uri() . '/js/theme_scripts.js', array('jquery'), null, true);

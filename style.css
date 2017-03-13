@@ -25,7 +25,9 @@ body {
 .navbar-nav {
   padding-top: 4px; }
 
+.form-control,
 .alert,
+.btn,
 .card,
 .jumbotron {
   border-radius: 0; }
@@ -33,3 +35,44 @@ body {
 /* FontAwesome */
 .fa {
   vertical-align: middle; }
+
+/* Return to top button */
+#return-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: block;
+  display: none;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7); }
+
+#return-to-top i {
+  font-size: 19px;
+  position: relative;
+  top: 13px;
+  left: 16px;
+  margin: 0;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #fff; }
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9); }
+
+#return-to-top:hover i {
+  top: 5px;
+  color: #fff; }
