@@ -57,3 +57,68 @@ add_filter('wp_mail_from', 'strapped_down_mail_from');
 //WP Helpers
 show_admin_bar(false);
 add_theme_support('post-thumbnails');
+
+// add tag support to pages
+function tags_support_all() {
+  register_taxonomy_for_object_type('post_tag', 'page');
+}
+
+// ensure all tags are included in queries
+function tags_support_query($wp_query) {
+  if ($wp_query->get('tag')) $wp_query->set('post_type', 'any');
+}
+
+// tag hooks
+add_action('init', 'tags_support_all');
+add_action('pre_get_posts', 'tags_support_query');
+
+// Customizer Func's ==============================================================================
+
+// Remove Default Func's
+function strappedDown_remove_defaults( $wp_customize ) {
+ $wp_customize->remove_control('header_image');
+ $wp_customize->remove_panel('widgets');
+ $wp_customize->remove_panel('nav_menus');
+ $wp_customize->remove_section('colors');
+ $wp_customize->remove_section('background_image');
+ $wp_customize->remove_section('static_front_page');
+ $wp_customize->remove_section('title_tagline');
+}
+add_action( 'customize_register', 'strappedDown_remove_defaults',20);
+
+
+// Change Website Background Colors
+function strappedDown_footer_bg_color( $wp_customize ) {
+
+//Section for changing colors
+$wp_customize->add_section( 'strappedDown_change_colors' , array(
+    'title'       => __( 'Website Background Colors', 'strapped_down' ),
+    'priority'    => 30,
+    'description' => 'In this section you can customize colors of certain website components.',
+));
+    //Footer Background Color Change
+    $wp_customize->add_setting( 'sD_footer_bg_color' , array(
+        'default' => '#333',
+    ));
+    $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'sD_footer_bg_color', array(
+        'label'    => __( 'Footer Background Color', 'strapped_down' ),
+        'section'  => 'strappedDown_change_colors',
+        'settings' => 'sD_footer_bg_color',
+        'type'     => 'color',
+    )));    
+    }
+    add_action('customize_register', 'strappedDown_footer_bg_color');
+
+    //Footer Top Border Color Change
+    function strappedDown_border_top_color( $wp_customize ) {
+    $wp_customize->add_setting( 'sD_footer_top_border_color' , array(
+        'default' => '#5bc0de',
+    ));
+    $wp_customize->add_control( new WP_Customize_Color_Control($wp_customize, 'sD_footer_top_border_color', array(
+        'label'    => __( 'Footer Top Border Color', 'strapped_down' ),
+        'section'  => 'strappedDown_change_colors',
+        'settings' => 'sD_footer_top_border_color',
+        'type'     => 'color',
+    )));    
+    }
+    add_action('customize_register', 'strappedDown_border_top_color');

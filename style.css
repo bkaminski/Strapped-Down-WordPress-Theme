@@ -13,17 +13,27 @@ Text Domain: strapped_down
 /* Globals */
 body {
   font: 100% Helvetica, sans-serif;
-  padding-top: 0px;
+  padding-top: 0;
   background-color: #333; }
 
-/* Bootstrap 4 Alpha 6 Overrides */
-.navbar {
+/* Bootstrap 4 Alpha 6 Overrides ========================================= */
+.navbar-inverse .navbar-toggler {
+  margin-top: 23px;
+  border-color: rgba(255, 255, 255, 0.1); }
+
+.navbar-brand {
   min-height: 90px;
-  padding-top: 8px;
+  padding-top: 33px;
   border-radius: 0; }
 
+@media (min-width: 991px) {
+  .navbar-brand {
+    min-height: 90px;
+    padding-top: 33px;
+    border-radius: 0; } }
+
 .navbar-nav {
-  padding-top: 4px; }
+  padding-top: 2px; }
 
 .alert {
   margin-bottom: 0rem; }
@@ -35,12 +45,40 @@ body {
 .jumbotron {
   border-radius: 0; }
 
+/* Drop-down Menu Background Color */
+.dropdown-menu {
+  min-width: 15rem;
+  margin-top: 34px;
+  opacity: .85;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 0rem;
+  background-color: #000; }
+
+.dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .3em;
+  content: '';
+  vertical-align: middle;
+  border-top: .8em solid;
+  border-right: .4em solid transparent;
+  border-left: .4em solid transparent; }
+
+/* End Bootstrap Overrides =============================================== */
 /* FontAwesome */
 .fa {
   vertical-align: middle; }
 
-/* Return to top button */
-#return-to-top {
+/* Footer Styles */
+.sdFooter {
+  width: 100%;
+  min-height: 400px;
+  padding-top: 40px;
+  padding-bottom: 20px; }
+
+/* Go back to top button */
+#back-up {
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -60,7 +98,7 @@ body {
   background: black;
   background: rgba(0, 0, 0, 0.7); }
 
-#return-to-top i {
+#back-up i {
   font-size: 19px;
   position: relative;
   top: 13px;
@@ -73,9 +111,9 @@ body {
   transition: all .3s ease;
   color: #fff; }
 
-#return-to-top:hover {
+#back-up:hover {
   background: rgba(0, 0, 0, 0.9); }
 
-#return-to-top:hover i {
+#back-up:hover i {
   top: 5px;
   color: #fff; }
