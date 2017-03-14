@@ -6,8 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- favicon and branding icons -->
         <?php wp_head(); ?>
+        <script type="text/babel" src="<?php echo get_template_directory_uri(); ?>/js/elapsedapp.jsx"></script>
     </head>
         <body <?php body_class(); ?>>
+            <div id="elapsedApp"></div>
             <nav class="navbar sticky-top navbar-inverse bg-inverse navbar-toggleable-md">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

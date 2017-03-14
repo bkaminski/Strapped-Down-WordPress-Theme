@@ -13,7 +13,7 @@ Text Domain: strapped_down
 /* Globals */
 body {
   font: 100% Helvetica, sans-serif;
-  padding-top: 50px;
+  padding-top: 0px;
   background-color: #333; }
 
 /* Bootstrap 4 Alpha 6 Overrides */
@@ -24,6 +24,9 @@ body {
 
 .navbar-nav {
   padding-top: 4px; }
+
+.alert {
+  margin-bottom: 0rem; }
 
 .form-control,
 .alert,
