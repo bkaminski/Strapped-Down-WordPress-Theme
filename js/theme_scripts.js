@@ -24,7 +24,7 @@ $('.dropdown').on('hide.bs.dropdown', function(e){
   $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 });
 
-//Carousel Transition Speeds
+// **Temporary Carousel Transition Speeds
 $('#post-114').carousel({
     interval: 4000
 });
