@@ -1,5 +1,7 @@
-		<a href="javascript:" id="back-up" title="Back to Top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-		<div class="sdFooter" style="background:<?php echo ( get_theme_mod( 'sD_footer_bg_color' ) ); ?>;border-top:4px solid <?php echo ( get_theme_mod( 'sD_footer_top_border_color' ) ); ?>; ">
+		<a href="javascript:" id="back-up" title="Back to Top">
+			<i class="fa fa-chevron-up" aria-hidden="true"></i>
+		</a>
+		<div id="sdFooter" style="background:<?php echo ( get_theme_mod( 'sD_footer_bg_color' ) ); ?>;border-top:<?php echo ( get_theme_mod( 'sD_footer_top_border_thickness' ) ); ?>px solid <?php echo ( get_theme_mod( 'sD_footer_top_border_color' ) ); ?>;">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-4">

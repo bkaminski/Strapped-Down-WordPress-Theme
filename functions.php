@@ -2,9 +2,9 @@
 //Load Scripts
 function enqueue_strapped_down_scripts()
 {
+    wp_enqueue_script('babel-core', '//unpkg.com/babel-core@5.8.38/browser.min.js', array(), null, null, null);
     wp_enqueue_script('react-js', '//unpkg.com/react@15.3.2/dist/react.min.js', array(), null, null, null);
     wp_enqueue_script('react-dom', '//unpkg.com/react-dom@15.3.2/dist/react-dom.min.js', array(), null, null, null);
-    wp_enqueue_script('babel-core', '//unpkg.com/babel-core@5.8.38/browser.min.js', array(), null, null, null);
     wp_enqueue_script('CloudFlare-Tether', '//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', array(), null, true, null);
     wp_enqueue_script('bootstrap4a6-js-cdn', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', array('jquery'), null, true, null);
     wp_enqueue_script('strapped-down-js', get_template_directory_uri() . '/js/theme_scripts.js', array('jquery'), null, true, null);
@@ -72,6 +72,21 @@ function tags_support_query($wp_query) {
 add_action('init', 'tags_support_all');
 add_action('pre_get_posts', 'tags_support_query');
 
+// remove elipses from excerpt
+function new_excerpt_more($more)
+{
+    return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+//begin blog page read more button
+function excerpt_read_more_link($output)
+{
+    global $post;
+    return $output . '<a class="btn btn-warning text-uppercase" href="'. get_permalink() . '">Read More ...</a>';
+}
+add_filter('the_excerpt', 'excerpt_read_more_link');
+
 // Customizer Func's ==============================================================================
 
 // Remove Default Func's
@@ -92,9 +107,9 @@ function strappedDown_footer_bg_color( $wp_customize ) {
 
 //Section for changing colors
 $wp_customize->add_section( 'strappedDown_change_colors' , array(
-    'title'       => __( 'Website Background Colors', 'strapped_down' ),
+    'title'       => __( 'Footer Color Selections', 'strapped_down' ),
     'priority'    => 30,
-    'description' => 'In this section you can customize colors of certain website components.',
+    'description' => 'In this section you can customize colors of your websites global footer.',
 ));
     //Footer Background Color Change
     $wp_customize->add_setting( 'sD_footer_bg_color' , array(
@@ -122,3 +137,23 @@ $wp_customize->add_section( 'strappedDown_change_colors' , array(
     )));    
     }
     add_action('customize_register', 'strappedDown_border_top_color');
+
+    //Footer Top Border Thickness
+    function strappedDown_border_top_thickness( $wp_customize ) {
+    $wp_customize->add_setting( 'sD_footer_top_border_thickness' , array(
+        'default'   => '4',
+    ));
+    $wp_customize->add_control('sD_footer_top_border_thickness' , array(
+        'type'      => 'range',
+        'label'     => __( 'Footer Top Border Thickness' ),
+        'description' => __( 'The default value is 4px with a 2px minimum and a 12px maximum.' ),
+        'section'   => 'strappedDown_change_colors',
+        'settings' => 'sD_footer_top_border_thickness',
+            'input_attrs' => array(
+                'min' => 2, 
+                'max' => 12,
+                'step' => 1,
+    ),
+    ));    
+    }
+    add_action('customize_register', 'strappedDown_border_top_thickness');

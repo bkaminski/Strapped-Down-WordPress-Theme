@@ -12,7 +12,8 @@ Text Domain: strapped_down
 */
 /* Globals */
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% Roboto, sans-serif;
+  font-size: 18px;
   padding-top: 0;
   background-color: #333; }
 
@@ -42,13 +43,35 @@ body {
 .alert,
 .btn,
 .card,
+.badge,
 .jumbotron {
   border-radius: 0; }
 
+/* Vertical Carousel */
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100% 0); }
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0); }
+
+/*.carousel-caption
+{
+    bottom: 80px;
+}
+*/
 /* Drop-down Menu Background Color */
 .dropdown-menu {
   min-width: 15rem;
-  margin-top: 34px;
+  margin-top: 32px;
   opacity: .85;
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 0rem;
@@ -70,12 +93,26 @@ body {
 .fa {
   vertical-align: middle; }
 
-/* Footer Styles */
-.sdFooter {
+/* Ben Styles */
+#sdFooter {
   width: 100%;
   min-height: 400px;
   padding-top: 40px;
-  padding-bottom: 20px; }
+  padding-bottom: 15px; }
+
+#postBody {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background: white; }
+
+.sD-carousel {
+  max-height: 300px; }
+
+.image-card {
+  width: 100%;
+  height: 400px;
+  opacity: .95;
+  background: #000; }
 
 /* Go back to top button */
 #back-up {
