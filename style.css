@@ -63,11 +63,14 @@ body {
   -webkit-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0); }
 
-/*.carousel-caption
-{
-    bottom: 80px;
-}
-*/
+.carousel-caption {
+  bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.carousel-caption h3 {
+  font-size: 16px; }
+
 /* Drop-down Menu Background Color */
 .dropdown-menu {
   min-width: 15rem;
@@ -105,14 +108,9 @@ body {
   padding-bottom: 45px;
   background: white; }
 
-.sD-carousel {
-  max-height: 300px; }
-
-.image-card {
-  width: 100%;
-  height: 400px;
-  opacity: .95;
-  background: #000; }
+.card-button {
+  position: absolute;
+  bottom: 60px; }
 
 /* Go back to top button */
 #back-up {

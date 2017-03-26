@@ -23,11 +23,3 @@ $('.dropdown').on('show.bs.dropdown', function(e){
 $('.dropdown').on('hide.bs.dropdown', function(e){
   $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 });
-
-//Carousel Transition Speeds
-$('#post-114').carousel({
-    interval: 4000
-});
-$('#post-111').carousel({
-    interval: 5000
-});

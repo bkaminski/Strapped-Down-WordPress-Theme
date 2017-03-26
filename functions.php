@@ -2,13 +2,14 @@
 //Load Scripts
 function enqueue_strapped_down_scripts()
 {
-    wp_enqueue_script('babel-core', '//unpkg.com/babel-core@5.8.38/browser.min.js', array(), null, null, null);
-    wp_enqueue_script('react-js', '//unpkg.com/react@15.3.2/dist/react.min.js', array(), null, null, null);
-    wp_enqueue_script('react-dom', '//unpkg.com/react-dom@15.3.2/dist/react-dom.min.js', array(), null, null, null);
-    wp_enqueue_script('CloudFlare-Tether', '//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', array(), null, true, null);
+    wp_enqueue_script('babel-core', '//unpkg.com/babel-core@5.8.38/browser.min.js', false, null, null, null);
+    wp_enqueue_script('react-js', '//unpkg.com/react@15.3.2/dist/react.min.js', false, null, null, null);
+    wp_enqueue_script('react-dom', '//unpkg.com/react-dom@15.3.2/dist/react-dom.min.js', false, null, null, null);
+    wp_enqueue_script('CloudFlare-Tether', '//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', false, null, true, null);
     wp_enqueue_script('bootstrap4a6-js-cdn', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', array('jquery'), null, true, null);
-    wp_enqueue_script('strapped-down-js', get_template_directory_uri() . '/js/theme_scripts.js', array('jquery'), null, true, null);
+    wp_enqueue_script('strapped-down-js', get_template_directory_uri() . '/js/sD_scripts.js', array('jquery'), null, true, null);
     wp_enqueue_script('font-awesome-cdn', '//use.fontawesome.com/05b5b9ecc6.js', false, null, true, null);
+    wp_enqueue_script('holder.min.js', '//cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js', false, null, true, null);
 }
 add_action('wp_enqueue_scripts', 'enqueue_strapped_down_scripts');
 
@@ -83,7 +84,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 function excerpt_read_more_link($output)
 {
     global $post;
-    return $output . '<a class="btn btn-warning text-uppercase" href="'. get_permalink() . '">Read More ...</a>';
+    return $output . '<a class="btn btn-warning text-uppercase card-button" href="'. get_permalink() . '">Read More ...</a>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 

@@ -4,6 +4,7 @@
 	<div id="jumboTRON"></div>
 </section>
 	<div class="container">
+	<h1 class="text-white">Latest News:</h1>
 		<?php include get_template_directory() . '/inc/cardStack.php'; ?>
 	</div>
 	<br />
