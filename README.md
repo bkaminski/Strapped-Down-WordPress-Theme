@@ -7,7 +7,7 @@ This theme will be available for public release on Wordpress.org upon completion
 
 ![Strapped Down Preview](http://s233122301.onlinehome.us/media_types/sD_theme_priview.gif)
 <br />
-*Windows 10 Start Menu style blog loop. Featured image and title of post as image in loop.
+<em>*Windows 10 Start Menu style blog loop. Post "featured_image" and "the_title" of post as linked images in loop. Flex-box functionality on this section using Bootstrap 4 "Cards".</em>
 
 ### No Stable Release
 
