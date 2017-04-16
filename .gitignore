@@ -5,12 +5,11 @@
 /bower_components
 
 # Mac stuff
-/.DS_Store
+
 
 # WordPress Stuff
 
 languages
-layouts
 scss
 .jshintrc
 bower.json
