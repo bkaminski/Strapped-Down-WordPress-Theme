@@ -13,7 +13,7 @@
 					    </div>
 					    <div class="carousel-item">
 					    	<a href='<?php the_permalink() ?>'>
-					      		<img class="d-block img-fluid" src="holder.js/800x533?auto=yes&random=yes&text=<?php the_title();?>" />
+					      		<img class="d-block img-fluid" src="holder.js/800x533?auto=yes&random=no&text=<?php the_title();?>" />
 							</a>
 					    </div>
 					 </div>
