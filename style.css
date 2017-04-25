@@ -11,210 +11,144 @@ Tags: Wordpress Themes, Strapped Down, Strapped Down WordPres Theme, Responsive 
 Text Domain: strapped_down
 */
 /* Globals */
-body
-{
-    font: 100% Roboto, sans-serif;
-    font-size: 18px;
-
-    padding-top: 0;
-
-    background-color: #333;
-}
+body {
+  font: 100% Roboto, sans-serif;
+  font-size: 18px;
+  padding-top: 0;
+  background-color: #333; }
 
 /* Bootstrap 4 Alpha 6 Overrides ========================================= */
-.navbar-inverse .navbar-toggler
-{
-    margin-top: 23px;
+.navbar-inverse .navbar-toggler {
+  margin-top: 23px;
+  border-color: rgba(255, 255, 255, 0.1); }
 
-    border-color: rgba(255, 255, 255, .1);
-}
+.navbar-brand {
+  min-height: 90px;
+  padding-top: 33px;
+  border-radius: 0; }
 
-.navbar-brand
-{
+@media (min-width: 991px) {
+  .navbar-brand {
     min-height: 90px;
     padding-top: 33px;
+    border-radius: 0; } }
 
-    border-radius: 0;
-}
+.navbar-nav {
+  padding-top: 2px; }
 
-@media (min-width: 991px)
-{
-    .navbar-brand
-    {
-        min-height: 90px;
-        padding-top: 33px;
-
-        border-radius: 0;
-    }
-}
-
-.navbar-nav
-{
-    padding-top: 2px;
-}
-
-.alert
-{
-    margin-bottom: 0rem;
-}
+.alert {
+  margin-bottom: 0rem; }
 
 .form-control,
 .alert,
 .btn,
 .card,
 .badge,
-.jumbotron
-{
-    border-radius: 0;
-}
+.jumbotron {
+  border-radius: 0; }
 
 /* Vertical Carousel */
 .vert .carousel-item-next.carousel-item-left,
-.vert .carousel-item-prev.carousel-item-right
-{
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
+.vert .carousel-item-prev.carousel-item-right {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
 
 .vert .carousel-item-next,
-.vert .active.carousel-item-right
-{
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100% 0);
-}
+.vert .active.carousel-item-right {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100% 0); }
 
 .vert .carousel-item-prev,
-.vert .active.carousel-item-left
-{
-    -webkit-transform: translate3d(0, -100%, 0);
-            transform: translate3d(0, -100%, 0);
-}
+.vert .active.carousel-item-left {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0); }
 
-.carousel-caption
-{
-    bottom: 0;
+.carousel-caption {
+  bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0; }
 
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.carousel-caption h3
-{
-    font-size: 16px;
-}
+.carousel-caption h3 {
+  font-size: 16px; }
 
 /* Drop-down Menu Background Color */
-.dropdown-menu
-{
-    min-width: 15rem;
-    margin-top: 32px;
+.dropdown-menu {
+  min-width: 15rem;
+  margin-top: 32px;
+  opacity: .85;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 0rem;
+  background-color: #000; }
 
-    opacity: .85;
-    border: 1px solid rgba(0, 0, 0, .8);
-    border-radius: 0rem;
-    background-color: #000;
-}
-
-.dropdown-toggle::after
-{
-    display: inline-block;
-
-    width: 0;
-    height: 0;
-    margin-left: .3em;
-
-    content: '';
-    vertical-align: middle;
-
-    border-top: .8em solid;
-    border-right: .4em solid transparent;
-    border-left: .4em solid transparent;
-}
+.dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .3em;
+  content: '';
+  vertical-align: middle;
+  border-top: .8em solid;
+  border-right: .4em solid transparent;
+  border-left: .4em solid transparent; }
 
 /* End Bootstrap Overrides =============================================== */
 /* FontAwesome */
-.fa
-{
-    vertical-align: middle;
-}
+.fa {
+  vertical-align: middle; }
 
 /* Ben Styles */
-#sdFooter
-{
-    width: 100%;
-    min-height: 400px;
-    padding-top: 40px;
-    padding-bottom: 15px;
-}
+#sdFooter {
+  width: 100%;
+  min-height: 400px;
+  padding-top: 40px;
+  padding-bottom: 15px; }
 
-#postBody
-{
-    padding-top: 45px;
-    padding-bottom: 45px;
+#postBody {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background: white; }
 
-    background: white;
-}
-
-.card-button
-{
-    position: absolute;
-    bottom: 60px;
-}
+.card-button {
+  position: absolute;
+  bottom: 60px; }
 
 /* Go back to top button */
-#back-up
-{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+#back-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: block;
+  display: none;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  background: black;
+  background: rgba(0, 0, 0, 0.7); }
 
-    display: block;
-    display: none;
+#back-up i {
+  font-size: 19px;
+  position: relative;
+  top: 13px;
+  left: 16px;
+  margin: 0;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  color: #fff; }
 
-    width: 50px;
-    height: 50px;
+#back-up:hover {
+  background: rgba(0, 0, 0, 0.9); }
 
-    -webkit-transition: all .3s linear;
-       -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-         -o-transition: all .3s ease;
-            transition: all .3s ease;
-    text-decoration: none;
-
-    -webkit-border-radius: 35px;
-       -moz-border-radius: 35px;
-            border-radius: 35px;
-    background: black;
-    background: rgba(0, 0, 0, .7);
-}
-
-#back-up i
-{
-    font-size: 19px;
-
-    position: relative;
-    top: 13px;
-    left: 16px;
-
-    margin: 0;
-
-    -webkit-transition: all .3s ease;
-       -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-         -o-transition: all .3s ease;
-            transition: all .3s ease;
-
-    color: #fff;
-}
-
-#back-up:hover
-{
-    background: rgba(0, 0, 0, .9);
-}
-
-#back-up:hover i
-{
-    top: 5px;
-
-    color: #fff;
-}
+#back-up:hover i {
+  top: 5px;
+  color: #fff; }
