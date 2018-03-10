@@ -1,15 +1,4 @@
-<?php
-/**
- * The sidebar containing the main widget area.
- *
- * @package Sip
- */
-
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
-?>
-
-<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</div><!-- #secondary -->
+<div class="sidebarContent">
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+	<?php endif; ?>
+</div>
