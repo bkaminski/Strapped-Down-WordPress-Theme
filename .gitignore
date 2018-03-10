@@ -3,6 +3,7 @@
 /.tmp
 /.sass-cache
 /bower_components
+.csscomb.json
 
 # Mac stuff
 
