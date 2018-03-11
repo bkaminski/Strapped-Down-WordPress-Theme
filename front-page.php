@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div id="aboutInfo" class="col col-fluid">
-			<video autoplay="" loop="" id="video-background" muted="" plays-inline src="<?php echo get_template_directory_uri(); ?>/media/wilm-sunrise-01.mp4" type="video/mp4">
+			<video autoplay="" id="video-background" muted="" plays-inline src="<?php echo get_template_directory_uri(); ?>/media/wilm-sunrise-01.mp4" type="video/mp4">
 					<!-- loading fallback -->
 					<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw text-white"></i>
 					<p class="text-center">Your browser may not support HTML5 video</p>
