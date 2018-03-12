@@ -14,7 +14,7 @@ function async_load_scripts($url)
     else if ( is_admin() )
         return str_replace( '#asyncload', '', $url );
     else
-	return str_replace( '#asyncload', '', $url )."' async='async"; 
+  return str_replace( '#asyncload', '', $url )."' async='async"; 
     }
 add_filter( 'clean_url', 'async_load_scripts', 11, 1 );
 
@@ -26,7 +26,7 @@ function defer_load_scripts($url)
     else if ( is_admin() )
         return str_replace( '#deferload', '', $url );
     else
-	return str_replace( '#deferload', '', $url )."' defer='defer"; 
+  return str_replace( '#deferload', '', $url )."' defer='defer"; 
     }
 add_filter( 'clean_url', 'defer_load_scripts', 11, 1 );
 
@@ -47,7 +47,7 @@ add_action('wp_enqueue_scripts', 'enqueue_strapped_down_scripts');
 function holderjs_front_page() {
     if ( is_front_page() ) //Holderjs on frontpage only
 {
-  	wp_enqueue_script('holderjs', 'https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js', false, null, true, null);
+    wp_enqueue_script('holderjs', 'https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js', false, null, true, null);
 }}
 add_action('wp_enqueue_scripts', 'holderjs_front_page');
 
@@ -84,19 +84,19 @@ add_filter('get_avatar','replace_content');
 //Widgets
 if ( function_exists('register_sidebar') )
 register_sidebar(array(
-	'before_widget' => '<div class="card border-dark bg-light mb-3 card-drop">',
-	'after_widget' => '</div>',
-	'before_title' => '<div class="card-header"><h3 class="consolata">',
-	'after_title' => '</h3></div>',
+  'before_widget' => '<div class="card border-dark bg-light mb-3 card-drop">',
+  'after_widget' => '</div>',
+  'before_title' => '<div class="card-header"><h3 class="consolata">',
+  'after_title' => '</h3></div>',
 ));
 register_sidebar(array(
-  	'name' => __( 'Footer Menu' , 'strapped_down' ),
-  	'id' => 'strapped_down_footer_menu',
-  	'description' => __( 'Footer Navigation' , 'strapped_down' ),
-  	'before_widget' => '',
-  	'after_widget'  => '',
-  	'before_title' => '',
-  	'after_title' => ''
+    'name' => __( 'Footer Menu' , 'strapped_down' ),
+    'id' => 'strapped_down_footer_menu',
+    'description' => __( 'Footer Navigation' , 'strapped_down' ),
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title' => '',
+    'after_title' => ''
 ));
 
 //Change WP Emails and email address away from "WordPress" as sender
@@ -151,19 +151,11 @@ add_action('pre_get_posts', 'tags_support_query');
 function excerpt_read_more_link($output)
 {
     global $post;
-    return $output . '<a class="btn btn-dark text-uppercase" href="'. get_permalink() . '">Read More  <i class="fa fa-arrow-right fa-fw" aria-hidden="true"></i></a>';
+    return $output . '<a class="btn btn-dark text-uppercase" href="'. get_permalink() . '">Read More  <i class="fas fa-arrow-right fa-fw"></i></a>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 //end blog page read more button
 
-//Responsive URL Video Embeds
-add_filter( 'embed_oembed_html', 'custom_oembed_filter', 10, 4 ) ;
-
-function custom_oembed_filter($html, $url, $attr, $post_ID) {
-    $return = '<div class="embed-responsive embed-responsive-16by9">'.$html.'</div><br />';
-    return $return;
-}
-//END Responsive URL Video Embeds
 
 //begin pagination
 function wss_pagination($pages = '', $range = 1) {
@@ -186,17 +178,17 @@ function wss_pagination($pages = '', $range = 1) {
             echo "<li class='page-item'>";
                 if($paged > 2 && $paged > $range+1 && $showitems < $pages) 
                   echo "<a class='page-link' aria-label='First Page' href='".get_pagenum_link(1)."'>
-                      		<i class='fa fa-angle-double-left fa-lg' aria-hidden='true'></i>
-                        	<span class='sr-only'>go to first page</span>
-                    	</a>"
+                          <i class='fa fa-angle-double-left fa-lg' aria-hidden='true'></i>
+                          <span class='sr-only'>go to first page</span>
+                      </a>"
             ;
             echo "</li>";
             echo "<li class='page-item'>";
                 if($paged > 1 && $showitems < $pages) 
                   echo "<a class='page-link' href='".get_pagenum_link($paged - 1)."'>
-                      		<i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>
-                        	<span class='sr-only'>go to previous page</span>
-                  		</a>"
+                          <i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>
+                          <span class='sr-only'>go to previous page</span>
+                      </a>"
             ;
             echo "</li>";
             for ($i=1; $i <= $pages; $i++) {
@@ -283,7 +275,7 @@ if (!function_exists('strapped_down_comment')) :
                                 printf('<small class="fn">%1$s %2$s</small>',
                                     get_comment_author_link(),
                                     // If current post author is also comment author, make it known visually.
-                                    ($comment->user_id === $post->post_author) ? '<br /><span class="badge badge-success"><i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i> ' . __(
+                                    ($comment->user_id === $post->post_author) ? '<br /><span class="badge badge-success"><i class="fas fa-pencil-alt fa-fw"></i> ' . __(
                                         'Post author',
                                         'strapped_down'
                                     ) . '</span> ' : ''); ?>
@@ -310,7 +302,7 @@ if (!function_exists('strapped_down_comment')) :
                               <?php comment_text(); ?>
                             <p>
                                 <?php comment_reply_link( array_merge($args, array(
-                                            'reply_text' => __('<button class="btn btn-primary btn-md"><i class="fa fa-comments-o fa-fw fa-lg" aria-hidden="true"></i>&nbsp;Reply</button>', 'strapped_down'),
+                                            'reply_text' => __('<button class="btn btn-info btn-md"><i class="far fa-comment-alt fa-fw fa-lg"></i>&nbsp;Reply</button>', 'strapped_down'),
                                             'depth'      => $depth,
                                             'max_depth'  => $args['max_depth']
                                         )

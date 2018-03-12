@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19450400-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'UA-19450400-1');
-		</script>
 	    <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/media/apple-icon-57x57.png">
@@ -39,27 +31,27 @@
   			        </a>
 			    </div>
 			    <div class="col-sm-5">
-  			        <ul class="list-inline float-right">
+  			        <ul class="list-inline">
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://twitter.com/thebenkaminski" class="social-icons"><i class="bk-hover fab fa-twitter fa-fw fa-2x"></i></a>
+  			          		<a target="_blank" href="https://twitter.com/thebenkaminski" class="social-icons"><i class="bk-hover fab fa-twitter fa-fw"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://github.com/bkaminski" class="social-icons"><i class="bk-hover fab fa-github fa-fw fa-2x"></i></a>
+  			          		<a target="_blank" href="https://github.com/bkaminski" class="social-icons"><i class="bk-hover fab fa-github fa-fw"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://stackoverflow.com/users/2649546/ben-kaminski" class="social-icons"><i class="bk-hover fab fa-stack-overflow fa-fw fa-2x"></i></a>
+  			          		<a target="_blank" href="https://stackoverflow.com/users/2649546/ben-kaminski" class="social-icons"><i class="bk-hover fab fa-stack-overflow fa-fw"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://medium.com/@benkaminski" class="social-icons"><i class="bk-hover fab fa-medium-m fa-fw fa-2x"></i></a>
+  			          		<a target="_blank" href="https://medium.com/@benkaminski" class="social-icons"><i class="bk-hover fab fa-medium-m fa-fw"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://facebook.com/bens.tweetsonly/" class="social-icons"><i class="bk-hover fab fa-facebook-f fa-fw fa-2x"></i></a>
+  			          		<a target="_blank" href="https://facebook.com/bens.tweetsonly/" class="social-icons"><i class="bk-hover fab fa-facebook-f fa-fw"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://www.linkedin.com/in/kaminskiben/" class="social-icons"><i class="bk-hover fab fa-linkedin-in fa-fw fa-2x"></i></a>
+  			          		<a target="_blank" href="https://www.linkedin.com/in/kaminskiben/" class="social-icons"><i class="bk-hover fab fa-linkedin-in fa-fw"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://plus.google.com/u/0/+BenKaminski" class="social-icons"><i class="bk-hover fab fa-google-plus-g fa-fw fa-2x"></i></i></a>
+  			          		<a target="_blank" href="https://plus.google.com/u/0/+BenKaminski" class="social-icons"><i class="bk-hover fab fa-google-plus-g fa-fw"></i></a>
   			          	</li>
   			        </ul>
 			    </div>
@@ -67,7 +59,7 @@
 		</div>
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-sD" style="background-image: url('<?php echo get_template_directory_uri();?>/media/rubber_grip.png');border-bottom: 4px solid #5abfdd;">
 	    	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#bkNavbar" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="cursor:pointer;">
-	    		<i class="fa fa-bars fa-lg fa-toggler" aria-hidden="true"></i>
+	    		<i class="fas fa-align-justify fa-lg mt-1 mb-1"></i>
 	    	</button>
 	       	<a id="here" style="margin-top:-30px;"></a>
 	        <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
@@ -76,10 +68,10 @@
 	        	<div class="collapse navbar-collapse" id="bkNavbar">
 	            	<ul class="navbar-nav mr-auto consolata">
 	                	<li class="nav-item">
-	                    	<a class="nav-link" href="/about-ben-kaminski/"><i class="fa fa-address-book fa-fw" aria-hidden="true"></i>  About</a>
+	                    	<a class="nav-link" href="/about-ben-kaminski/"><i class="fas fa-address-book fa-fw" aria-hidden="true"></i>  About</a>
 	                    </li>
 	                    <li class="nav-item dropdown">
-	                    	<a class="nav-link dropdown-toggle" href="#" id="bkNavDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-th-large fa-fw" aria-hidden="true"></i>  Blogs</a>
+	                    	<a class="nav-link dropdown-toggle" href="#" id="bkNavDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-th-large fa-fw" aria-hidden="true"></i>  Blogs</a>
 	                        <div class="dropdown-menu" aria-labelledby="bkNavDropDown">
 	                        	<a class="dropdown-item" href="web-development-blog">Dev Blog</a>
 	                            <a class="dropdown-item" href="bens-other-blog">Other Blog</a>
@@ -92,9 +84,15 @@
 	                        <a class="nav-link" href="donate-pay-using-bitcoin"><i class="fab fa-bitcoin fa-fw"></i>  Donate/Pay</a>
 	                    </li>
 	                </ul>  
-	                <form class="form-inline mt-2 mt-md-0" method="get" id="searchform" action="<?php echo home_url() ; ?>/">
-	                	<input class="form-control mr-sm-2" type="text" placeholder="Search this site" alue="<?php echo esc_html($s, 1); ?>" name="s" id="s" maxlength="33" required />
-	                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i></button>
+	                <form class="form-inline" method="get" id="searchform" action="<?php echo home_url() ; ?>/">
+	                	<div class="input-group">
+		                	<input class="form-control" type="text" placeholder="Search this site" value="<?php echo esc_html($s, 1); ?>" name="s" id="s" maxlength="33" required />
+		                		<div class="input-group-append">
+		                    		<button class="btn btn-info my-sm-0" type="submit">
+		                    			<i class="fas fa-search fa-lg fa-fw"></i>
+		                    		</button>
+		                    	</div>
+		                </div>
 	                </form>
 	            </div>
         </nav>      

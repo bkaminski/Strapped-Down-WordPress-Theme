@@ -180,34 +180,19 @@ text-decoration: none;
 from {
 background-position: 0;
 }
-    to {
+to {
 background-position: -2500px;
-}
-}
+}}
 
 @keyframes slide {
 from {
 background-position: 0;
 }
-    to {
+to {
 background-position: -2500px;
-}
-}
+}}
 
 /* end single image slider */
-
-.row.equal-height {
-display: flex;
-flex-wrap: wrap;
-}
-.row.equal-height > [class*="col-"] {
-display: flex;
-flex-direction: column;
-}
-
-.card {
-flex: 1;
-}
 
 /* Vertical Carousel */
 .vert .carousel-item-next.carousel-item-left,
@@ -268,13 +253,7 @@ box-shadow: 2px 2px 5px #333333;
 display: none;
 }
 
-
-.fa-rotate {
--webkit-transform: rotate(16deg);
-    -ms-transform: rotate(16deg);
-        transform: rotate(16deg);
-}
-.fa-bounce {
+.bk-bounce {
 position: relative;
 display: inline-block;
 -webkit-animation: bounce 1s infinite linear;
@@ -287,58 +266,54 @@ display: inline-block;
 0% {
 top: 0;
 }
-    50% {
+50% {
 top: -0.2em;
 }
-    70% {
+70% {
 top: -0.3em;
 }
-    100% {
+100% {
 top: 0;
-}
-}
+}}
 @-moz-keyframes bounce {
 0% {
 top: 0;
 }
-    50% {
+50% {
 top: -0.2em;
 }
-    70% {
+70% {
 top: -0.3em;
 }
-    100% {
+100% {
 top: 0;
-}
-}
+}}
 @-o-keyframes bounce {
 0% {
 top: 0;
 }
-    50% {
+50% {
 top: -0.2em;
 }
-    70% {
+70% {
 top: -0.3em;
 }
-    100% {
+100% {
 top: 0;
-}
-}
+}}
 @keyframes bounce {
 0% {
 top: 0;
 }
-    50% {
+50% {
 top: -0.2em;
 }
-    70% {
+70% {
 top: -0.3em;
 }
-    100% {
+100% {
 top: 0;
-}
-}
+}}
 #downArrow {
 margin-top: 100px;
 }
