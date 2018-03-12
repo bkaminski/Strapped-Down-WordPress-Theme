@@ -1,5 +1,5 @@
-		<a href="javascript:" id="back-up" title="Back to Top">
-			<i class="fas fa-chevron-up text-white"></i>
+		<a href="javascript:" id="back-up" class="text-center pt-2" title="Back to Top">
+			<i class="fas fa-chevron-up fa-lg text-white"></i>
 		</a>
 		<div id="sdFooter">
 			<div class="container">
