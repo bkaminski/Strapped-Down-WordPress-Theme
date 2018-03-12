@@ -32,17 +32,17 @@ $('.dropdown').on('hide.bs.dropdown', function(e){
         function checkWidth() {
         if ($window.width() < 975) {
             $('.display-3').addClass('display-4');
-            $('.social-icons').find('.fa-hover').removeClass('fa-2x');
+            $('.social-icons').find('.bk-hover').removeClass('fa-2x');
         }
         if ($window.width() >= 975) {
             $('.display-3').removeClass('display-4');
-            $('.social-icons').find('.fa-hover').addClass('fa-2x');
+            $('.social-icons').find('.bk-hover').addClass('fa-2x');
         }
         if ($window.width() < 576) {
-             $('.list-inline').removeClass('pull-right');
+             $('.list-inline').removeClass('float-right');
         }
         if ($window.width() >= 576) {
-             $('.list-inline').addClass('pull-right');
+             $('.list-inline').addClass('float-right');
         }
     }
     // Execute on load

@@ -1,5 +1,5 @@
 		<a href="javascript:" id="back-up" title="Back to Top">
-			<i class="fa fa-chevron-up" aria-hidden="true"></i>
+			<i class="fas fa-chevron-up text-white"></i>
 		</a>
 		<div id="sdFooter">
 			<div class="container">
@@ -9,7 +9,7 @@
 						<?php dynamic_sidebar( 'strapped_down_footer_menu' ); ?>
 					</div>
 					<div class="col-md-6">
-						<h3 class="text-white"><i class="fa fa-linkedin-square fa-fw fa-lg" aria-hidden="true"></i> LinkedIn:</h3>
+						<h3 class="text-white"><i class="fab fa-linkedin fa-fw fa-lg"></i> LinkedIn:</h3>
 						<div class="LI-profile-badge text-center" data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="kaminskiben">
 							<a class="LI-simple-link" href='https://www.linkedin.com/in/kaminskiben?trk=profile-badge'>Ben Kaminski</a>
 						</div>

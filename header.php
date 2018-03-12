@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19450400-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-19450400-1');
+		</script>
 	    <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/media/apple-icon-57x57.png">
@@ -31,24 +39,27 @@
   			        </a>
 			    </div>
 			    <div class="col-sm-5">
-  			        <ul class="list-inline pull-right">
+  			        <ul class="list-inline float-right">
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://twitter.com/thebenkaminski" class="social-icons"><i class="fa fa-twitter fa-fw fa-2x fa-hover" aria-hidden="true"></i></a>
+  			          		<a target="_blank" href="https://twitter.com/thebenkaminski" class="social-icons"><i class="bk-hover fab fa-twitter fa-fw fa-2x"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://plus.google.com/u/0/+BenKaminski" class="social-icons"><i class="fa fa-google-plus-square fa-fw fa-2x fa-hover" aria-hidden="true"></i></a>
+  			          		<a target="_blank" href="https://github.com/bkaminski" class="social-icons"><i class="bk-hover fab fa-github fa-fw fa-2x"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://github.com/bkaminski" class="social-icons"><i class="fa fa-github fa-fw fa-2x fa-hover" aria-hidden="true"></i></a>
+  			          		<a target="_blank" href="https://stackoverflow.com/users/2649546/ben-kaminski" class="social-icons"><i class="bk-hover fab fa-stack-overflow fa-fw fa-2x"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://stackexchange.com/users/3132060/ben-kaminski" class="social-icons"><i class="fa fa-stack-exchange fa-fw fa-2x fa-hover" aria-hidden="true"></i></a>
+  			          		<a target="_blank" href="https://medium.com/@benkaminski" class="social-icons"><i class="bk-hover fab fa-medium-m fa-fw fa-2x"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://www.linkedin.com/in/kaminskiben/" class="social-icons"><i class="fa fa-linkedin-square fa-fw fa-2x fa-hover" aria-hidden="true"></i></a>
+  			          		<a target="_blank" href="https://facebook.com/bens.tweetsonly/" class="social-icons"><i class="bk-hover fab fa-facebook-f fa-fw fa-2x"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://medium.com/@benkaminski" class="social-icons"><i class="fa fa-medium fa-fw fa-2x fa-hover" aria-hidden="true"></i></a>
+  			          		<a target="_blank" href="https://www.linkedin.com/in/kaminskiben/" class="social-icons"><i class="bk-hover fab fa-linkedin-in fa-fw fa-2x"></i></a>
+  			          	</li>
+  			          	<li class="list-inline-item subnav-anchor">
+  			          		<a target="_blank" href="https://plus.google.com/u/0/+BenKaminski" class="social-icons"><i class="bk-hover fab fa-google-plus-g fa-fw fa-2x"></i></i></a>
   			          	</li>
   			        </ul>
 			    </div>
@@ -75,10 +86,10 @@
 	                        </div>
 	                    </li>
 	                    <li class="nav-item">
-	                    	<a class="nav-link bk-contact-modal" href="#"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>  Contact</a>
+	                    	<a class="nav-link bk-contact-modal" href="#"><i class="fas fa-at fa-fw"></i>  Contact</a>
 	                    </li>
 	                    <li class="nav-item">
-	                        <a class="nav-link" href="donate-pay-using-bitcoin"><i class="fa fa-btc fa-fw fa-rotate" aria-hidden="true"></i>  Donate/Pay</a>
+	                        <a class="nav-link" href="donate-pay-using-bitcoin"><i class="fab fa-bitcoin fa-fw"></i>  Donate/Pay</a>
 	                    </li>
 	                </ul>  
 	                <form class="form-inline mt-2 mt-md-0" method="get" id="searchform" action="<?php echo home_url() ; ?>/">
