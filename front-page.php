@@ -28,7 +28,7 @@
 	            			<p class="text-center text-white"><em>Ben Kaminski<br /><small>Photo Credit: Ben Kaminski</small></em></p>
 	        		</div>
 	        		<div class="col-sm-9">
-	          			<h1 class="text-white site-title">benkaminski.com</h1>
+	          			<h1 class="text-white site-title">This is Who I am:</h1>
 	            		<p class="lead text-white">My name is Ben Kaminski. I design, program, and maintain websites and web applications across the globe. I have over 20 years experience working in the field of internet technology and infrastructure. I can help you or your company achieve web technology goals and solve existing issues. I am a trusted, relied upon developer that can get things done quickly and effictively. I am also an experienced technology cosultant that can help your company utilize cost effective technology solutions.</p>
 	              		<hr />
 	              		<p class="text-white">Find out more about my history of programming and design by clicking on the button below.</p>
