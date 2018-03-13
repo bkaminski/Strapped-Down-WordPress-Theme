@@ -19,7 +19,7 @@
 						    </div>
 						 </div>
 					</div>
-					<div class="card-body">
+					<div class="card-body" style="border-top: 2px solid #000;">
 					    <p class="card-text"><?php the_excerpt(); ?></p>
 					    <br /><br />
 					</div>
@@ -52,7 +52,7 @@
 						    </div>
 					</div>
 				</div>
-				<div class="card-body">
+				<div class="card-body" style="border-top: 2px solid #000;">
 					 <p class="card-text"><?php the_excerpt(); ?></p>
 					 	<br /><br />
 				</div>
