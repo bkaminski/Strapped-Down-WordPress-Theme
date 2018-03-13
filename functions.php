@@ -254,7 +254,7 @@ if (!function_exists('strapped_down_comment')) :
                 <span id="comment-<?php comment_ID(); ?>">
                     <div class="card card-drop mb-1">
                         <div class="card-header">
-                            <h4 class="card-title"><?php _e('<i class="fa fa-share-alt-square fa-fw fa-lg" aria-hidden="true"></i>&nbsp;Pingback:', 'strapped_down'); ?></h4>
+                            <h4 class="card-title"><?php _e('<i class="fas fa-share-alt-square fa-fw fa-lg"></i>&nbsp;Pingback:', 'strapped_down'); ?></h4>
                         </div>
                         <div class="card-body">
                             <p><?php comment_author_link(); ?><p>
@@ -302,7 +302,7 @@ if (!function_exists('strapped_down_comment')) :
                               <?php comment_text(); ?>
                             <p>
                                 <?php comment_reply_link( array_merge($args, array(
-                                            'reply_text' => __('<button class="btn btn-info btn-md"><i class="far fa-comment-alt fa-fw fa-lg"></i>&nbsp;Reply</button>', 'strapped_down'),
+                                            'reply_text' => __('<button class="btn btn-warning btn-md"><i class="far fa-comment-alt fa-fw fa-lg"></i>&nbsp;Reply</button>', 'strapped_down'),
                                             'depth'      => $depth,
                                             'max_depth'  => $args['max_depth']
                                         )
