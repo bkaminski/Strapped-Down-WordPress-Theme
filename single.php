@@ -34,7 +34,7 @@
 		      							<h4 class="card-title"><meta itemprop="datePublished" content="<?php the_time('Y-m-d') ?>"/><?php the_time('F jS, Y') ?></h4>
 							    		<p itemprop="author" itemscope itemtype="https://schema.org/Person" class="card-text"> by <span itemprop="name"><?php the_author() ?></span></p>
 							    		<p class="text-center">
-											<a class="badge badge-info badge-pill p-2" href="<?php comments_link(); ?>"><i class="fa fa-commenting-o fa-fw fa-lg" aria-hidden="true"></i>  <?php comments_number( '0 comments', '1 comment', '% comments' ); ?>
+											<a class="badge badge-info badge-pill p-2" href="<?php comments_link(); ?>"><i class="fas fa-comments fa-fw"></i>  <?php comments_number( '0 comments', '1 comment', '% comments' ); ?>
 											</a>
 										</p>
 		      						</div>

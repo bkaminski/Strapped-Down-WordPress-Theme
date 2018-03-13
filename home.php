@@ -22,7 +22,7 @@
 							<br /> by <span itemprop="author"><?php the_author() ?></span></small>
 							<br />
 							<a class="badge badge-pill badge-info p-2 mt-2" href="<?php comments_link(); ?>">
-								<i class="fa fa-commenting-o fa-fw" aria-hidden="true"></i>  <?php comments_number( '0', '1', '%' ); ?> Comments
+								<i class="fas fa-comments fa-fw"></i>  <?php comments_number( '0', '1', '%' ); ?> Comments
 							</a>
 						</div>
 						<div class="col-lg-9">
