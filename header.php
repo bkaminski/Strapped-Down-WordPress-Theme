@@ -39,7 +39,7 @@
   			          		<a target="_blank" href="https://github.com/bkaminski" class="social-icons"><i class="bk-hover fab fa-github fa-fw"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
-  			          		<a target="_blank" href="https://stackoverflow.com/users/2649546/ben-kaminski" class="social-icons"><i class="bk-hover fab fa-stack-overflow fa-fw"></i></a>
+  			          		<a target="_blank" href="https://stackexchange.com/users/3132060/ben-kaminski?tab=accounts" class="social-icons"><i class="bk-hover fab fa-stack-exchange fa-fw"></i></a>
   			          	</li>
   			          	<li class="list-inline-item subnav-anchor">
   			          		<a target="_blank" href="https://medium.com/@benkaminski" class="social-icons"><i class="bk-hover fab fa-medium-m fa-fw"></i></a>
