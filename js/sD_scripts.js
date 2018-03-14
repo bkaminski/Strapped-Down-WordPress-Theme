@@ -75,7 +75,8 @@ $(document).ready(function($){
     //Bootstrap Comment Submit Button
     $(this).find('#submit').addClass('btn btn-dark btn-submit');
 
-    $('li.sitemapButton').find('a').addClass('btn btn-info btn-block btn-lg');
+    $('li.sitemapButton').find('a').addClass('btn btn-info btn-block btn-lg text-left');
+    $("#footMenu").find('a').addClass('mb-3');
 
 
 

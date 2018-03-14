@@ -4,12 +4,17 @@
 		<div id="sdFooter">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div id="footMenu" class="col-md-6">
 						<h3 class="text-white"><i class="fa fa-compass fa-fw fa-lg" aria-hidden="true"></i> Navigation:</h3>
+						<br />
 						<?php dynamic_sidebar( 'strapped_down_footer_menu' ); ?>
+						<div class=".d-block .d-sm-none">
+							<br />
+						</div>
 					</div>
 					<div class="col-md-6">
 						<h3 class="text-white"><i class="fab fa-linkedin fa-fw fa-lg"></i> LinkedIn:</h3>
+						<br />
 						<div class="LI-profile-badge text-center" data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="kaminskiben">
 							<a class="LI-simple-link" href='https://www.linkedin.com/in/kaminskiben?trk=profile-badge'>Ben Kaminski</a>
 						</div>
