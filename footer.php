@@ -1,4 +1,4 @@
-		<a href="javascript:" id="back-up" class="text-center pt-2" title="Back to Top">
+		<a href="javascript:" id="back-up" class="text-center pt-3" title="Back to Top">
 			<i class="fas fa-chevron-up fa-lg text-white"></i>
 		</a>
 		<div id="sdFooter">
@@ -29,7 +29,6 @@
 		<!-- contact modal -->
 		<?php include get_template_directory() . '/inc/contactModal.php'; ?>
 		<!-- \\\\\\\\\\\\\ SCRIPTS //////////// -->
-		<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 		<?php wp_footer(); ?>
 	</body>
 </html>
