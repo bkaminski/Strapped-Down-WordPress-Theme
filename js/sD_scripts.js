@@ -59,6 +59,9 @@ $(document).ready(function($){
         $('#userName').focus();
     });
 
+    //Center Featured Image on pages
+    $("#featImg").find('img').addClass('mx-auto d-block');
+
     //Home page text drop in effect
     
     $(".dropping-bombs1").slideUp(1).delay(1000).slideDown('slow');

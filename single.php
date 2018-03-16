@@ -12,7 +12,7 @@
 									<script>
 										(adsbygoogle = window.adsbygoogle || []).push({});
 									</script>
-							<div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+							<div id="featImg" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
 								<?php the_post_thumbnail(); ?>
 								<meta itemprop="url" content="<?php $thumb_id = get_post_thumbnail_id(); $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true); echo $thumb_url[0];?>">
 			      				<meta itemprop="width" content="<?php $imgdata = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' ); echo $imgwidth = $imgdata[1];?>">

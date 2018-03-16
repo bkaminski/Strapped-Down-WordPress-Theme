@@ -7,9 +7,7 @@
 				<p class="text-center text-white dropping-bombs4"> >>> Coding is my art, lifestyle choice, and creative outlet.</p>
 					<div id="downArrow" class="text-center">
 						<a class="text-white" href="#here">
-							<span class="fa-bounce">
-								<i id="goDown" class="fas fa-chevron-circle-down fa-fw fa-4x"></i>
-							</span>
+							<i id="goDown" class="bk-bounce fas fa-chevron-circle-down fa-fw fa-4x"></i>
 							<br />
 							<small class="dropping-bombs5">much more...</small>
 						</a>
@@ -26,7 +24,7 @@
 	    	<div id="bgContainer" class="container pt-5">
 	      		<div class="row">
 	        		<div class="col-sm-3">
-	            		<img class="img-thumbnail" src="/wp-content/uploads/2018/01/benkaminski.jpg" alt="Ben Kaminski" />
+	            		<img class="img-thumbnail" src="/wp-content/uploads/2018/03/benkaminski.jpg" alt="Ben Kaminski" />
 	            			<p class="text-center text-white"><em>Ben Kaminski<br /><small>Photo Credit: Ben Kaminski</small></em></p>
 	        		</div>
 	        		<div class="col-sm-9">
