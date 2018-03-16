@@ -73,10 +73,13 @@ $(document).ready(function($){
     $('.page-id-1714').find('.btn-dark').addClass('btn-dark-home');
 
     //Bootstrap Comment Submit Button
-    $(this).find('#submit').addClass('btn btn-dark btn-submit');
-
+    $(this).find('#submit').addClass('btn btn-lg btn-dark btn-submit pr-5 pl-5');
+    //Widget Menu Buttons
     $('li.sitemapButton').find('a').addClass('btn btn-info btn-block btn-lg text-left');
     $("#footMenu").find('a').addClass('mb-3');
+
+    //Comment form adjustments
+    $(this).find("#author, #email").addClass('form-control form-control-lg');
 
 
 

@@ -10,10 +10,6 @@
 				</h4>
 			</div>
 			<?php echo wss_pagination(); ?>
-				<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
 			<br />
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 					<h2><a href='<?php the_permalink() ?>'rel='bookmark' title='<?php the_title(); ?>'><?php the_title(); ?></a></h2>
@@ -29,12 +25,6 @@
 								<div class="alert alert-danger"><?php _e('<h4>Well, I could not find anything to match your search. Try again?<h4>'); ?></div>
 									<?php endif; ?>
 									<p><?php echo wss_pagination(); ?></p>
-									<br />
-									<br />
-									<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
-										<script>
-										(adsbygoogle = window.adsbygoogle || []).push({});
-										</script>
 								</div>
 		<div class="col-lg-3">
 			<?php get_sidebar(); ?>	

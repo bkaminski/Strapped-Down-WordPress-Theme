@@ -258,7 +258,7 @@ if (!function_exists('strapped_down_comment')) :
                             <h4 class="card-title"><?php _e('<i class="fas fa-share-alt fa-fw fa-lg"></i>&nbsp;Pingback:', 'strapped_down'); ?></h4>
                         </div>
                         <div class="card-body">
-                            <p><?php comment_author_link(); ?><p>
+                            <?php comment_author_link(); ?>
                         </div>
                     </div>
                     <br />
@@ -281,7 +281,7 @@ if (!function_exists('strapped_down_comment')) :
                                         'strapped_down'
                                     ) . '</span> ' : ''); ?>
                               </h4>
-                            <p><small>
+                            <small>
                                   <?php printf('<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
                                               esc_url(get_comment_link($comment->comment_ID)),
                                               get_comment_time('c'),
@@ -291,7 +291,7 @@ if (!function_exists('strapped_down_comment')) :
                                                   get_comment_time()
                                               )
                                     ); ?>
-                            </small></p>
+                            </small>
                             </div>
                             <?php if ('0' == $comment->comment_approved) : ?>
                                 <p class="alert alert-warning"><?php _e(
@@ -301,14 +301,12 @@ if (!function_exists('strapped_down_comment')) :
                             <?php endif; ?>
                             <div class="card-body">
                               <?php comment_text(); ?>
-                            <p>
-                                <?php comment_reply_link( array_merge($args, array(
-                                            'reply_text' => __('<button class="btn btn-info btn-md"><i class="far fa-comment-alt fa-fw fa-lg"></i>&nbsp;Reply</button>', 'strapped_down'),
-                                            'depth'      => $depth,
-                                            'max_depth'  => $args['max_depth']
-                                        )
-                                    )); ?>
-                            </p>
+                              <?php comment_reply_link( array_merge($args, array(
+                                    'reply_text' => __('<button class="btn btn-info btn-md"><i class="far fa-comment-alt fa-fw fa-lg"></i>&nbsp;Reply</button>', 'strapped_down'),
+                                    'depth'      => $depth,
+                                    'max_depth'  => $args['max_depth']
+                                    )
+                              )); ?>
                         </div>
                     </div>
                 </div>
