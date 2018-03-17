@@ -1,4 +1,4 @@
-		<a href="javascript:" id="back-up" class="text-center pt-3" title="Back to Top">
+		<a href="javascript:" id="back-up" class="text-center" title="Back to Top">
 			<i class="fas fa-chevron-up fa-lg text-white"></i>
 		</a>
 		<div id="sdFooter">
