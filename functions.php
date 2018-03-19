@@ -41,6 +41,7 @@ function enqueue_strapped_down_scripts()
     wp_enqueue_script('twitter','https://platform.twitter.com/widgets.js#asyncload', false, null, true);
     wp_enqueue_script('g-plus','https://apis.google.com/js/platform.js#deferload', false, null, true);
     wp_enqueue_script('linkedin', 'https://platform.linkedin.com/badges/js/profile.js', false, null, true);
+    wp_enqueue_script('GitHub-Buttons', 'https://buttons.github.io/buttons.js', false, null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_strapped_down_scripts');
 

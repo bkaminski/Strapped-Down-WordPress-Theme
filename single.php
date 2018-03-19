@@ -1,11 +1,11 @@
 <?php get_header(); ?>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-9 intContent pr-2">
-				<br />
-					<article itemscope itemtype="http://schema.org/Article">
-						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-							<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="<?php echo get_permalink(); ?>"/>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 intContent pr-2">
+			<br />
+				<article itemscope itemtype="http://schema.org/Article">
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+						<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="<?php echo get_permalink(); ?>"/>
 							<h1 itemprop="headline"><?php the_title(); ?></h1>
 								<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
 								<br />
@@ -34,13 +34,15 @@
 		      							<h4 class="card-title"><meta itemprop="datePublished" content="<?php the_time('Y-m-d') ?>"/><?php the_time('F jS, Y') ?></h4>
 							    		<p itemprop="author" itemscope itemtype="https://schema.org/Person" class="card-text"> by <span itemprop="name"><?php the_author() ?></span></p>
 							    		<p class="text-center">
-											<a class="badge badge-info badge-pill p-2" href="<?php comments_link(); ?>"><i class="fas fa-comments fa-fw"></i>  <?php comments_number( '0 comments', '1 comment', '% comments' ); ?>
-											</a>
+											<a class="badge badge-info badge-pill p-2" href="<?php comments_link(); ?>"><i class="fas fa-comments fa-fw"></i>  <?php comments_number( '0 comments', '1 comment', '% comments' ); ?></a>
 										</p>
 		      						</div>
 		      						<div class="card-footer">
 		      							<p class="text-center">
 											<a href="http://twitter.com/thebenkaminski" class="twitter-follow-button" data-show-count="true">Follow @thebenkaminski</a>
+										</p>
+										<p class="text-center">
+											<a class="github-button" href="https://github.com/bkaminski" data-size="large" aria-label="Follow @bkaminski on GitHub" target="_blank">Follow @bkaminski</a>
 										</p>
 		      						</div>
 		      					</div>
