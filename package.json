@@ -6,17 +6,14 @@
   "repository": "https://github.com/bkaminski/Strapped-Down-WordPress-Theme",
   "license": "GPL-3.0-or-later",
   "keywords": [
-		"WordPress",
-		"Strapped-Down-WordPress-Theme"
-	],
-	"engines": {
-	},
-	"dependencies": {
-		
-	},
-	"devDependencies": {
-		
-	},
-	"scripts": {
-	}
-}
+	  "WordPress",
+	  "Strapped-Down-WordPress-Theme",
+	  "Flex-box",
+	  "Windows 10 style tiles"
+	  
+  ]
+},
+"engines": {},
+"dependencies": {},
+"devDependencies": {},
+"scripts": {}
