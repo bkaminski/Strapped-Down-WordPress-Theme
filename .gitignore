@@ -15,7 +15,6 @@ scss
 .jshintrc
 bower.json
 gulpfile.json
-package.json
 rtl.css
 gulpfile.js
 

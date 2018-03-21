@@ -1,0 +1,22 @@
+{
+  "name": "Strapped-Down-WordPress-Theme",
+  "description": "A highly customizable WordPress theme utilizing Bootstrap 4 and theme customizer functions.",
+  "version": "0.1.0",
+  "author": "Ben Kaminski",
+  "repository": "https://github.com/bkaminski/Strapped-Down-WordPress-Theme",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+		"WordPress",
+		"Strapped-Down-WordPress-Theme"
+	],
+	"engines": {
+	},
+	"dependencies": {
+		
+	},
+	"devDependencies": {
+		
+	},
+	"scripts": {
+	}
+}
