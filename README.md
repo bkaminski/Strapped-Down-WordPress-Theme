@@ -17,5 +17,4 @@ I had originally planned on releasing this to the public a few months back but w
 ## Alpha Version:
 The first public release will be on Wordpress.org and maintained here. I will be creating a new branch for the alpha release and a new branch for every subsequent release to follow depending on feedback and popularity.
 
-[![GitHub package version](https://img.shields.io/github/package-json/v/badges/shields.svg)](https://raw.githubusercontent.com/bkaminski/Strapped-Down-WordPress-Theme/master/package.json)
 
