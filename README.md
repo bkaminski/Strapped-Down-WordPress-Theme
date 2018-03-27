@@ -1,5 +1,5 @@
 # Strapped Down WordPress Theme
-[![Open Source Love](https://img.shields.io/badge/Open%20Source-%20%E2%9D%A4%20-ff69b4.svg)](https://opensource.org/) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![WordPress](https://img.shields.io/wordpress/v/akismet.svg)](https://github.com/bkaminski/Strapped-Down-WordPress-Theme/) [![PHP version from PHP-Eye](https://img.shields.io/php-eye/symfony/symfony.svg)](https://github.com/bkaminski/Strapped-Down-WordPress-Theme/) [![Bootstrap version from Bootstrap](https://img.shields.io/badge/Bootstrap-v4.0.0-orange.svg)](https://getbootstrap.com/)
+[![Open Source Love](https://img.shields.io/badge/Open%20Source-%20%E2%9D%A4%20-ff69b4.svg)](https://opensource.org/) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![WordPress](https://img.shields.io/wordpress/v/akismet.svg)](https://github.com/bkaminski/Strapped-Down-WordPress-Theme/) [![PHP version from PHP-Eye](https://img.shields.io/php-eye/symfony/symfony.svg)](https://github.com/bkaminski/Strapped-Down-WordPress-Theme/)  [![bootstrap](https://img.shields.io/badge/dynamic/json.svg?label=bootstrap&colorB=%23563d7c&prefix=v)](https://getbootstrap.com)
 
 ## Description:
 A WordPress theme with Bootstrap 4, React, Node, Gulp, JSON API and more.
