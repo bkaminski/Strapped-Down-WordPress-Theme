@@ -14,7 +14,7 @@ function async_load_scripts($url)
     else if ( is_admin() )
         return str_replace( '#asyncload', '', $url );
     else
-  return str_replace( '#asyncload', '', $url )."' async='async"; 
+	return str_replace( '#asyncload', '', $url )."' async='async"; 
     }
 add_filter( 'clean_url', 'async_load_scripts', 11, 1 );
 
@@ -26,7 +26,7 @@ function defer_load_scripts($url)
     else if ( is_admin() )
         return str_replace( '#deferload', '', $url );
     else
-  return str_replace( '#deferload', '', $url )."' defer='defer"; 
+	return str_replace( '#deferload', '', $url )."' defer='defer"; 
     }
 add_filter( 'clean_url', 'defer_load_scripts', 11, 1 );
 
@@ -49,7 +49,7 @@ add_action('wp_enqueue_scripts', 'enqueue_strapped_down_scripts');
 function holderjs_front_page() {
     if ( is_front_page() ) //Holderjs on frontpage only
 {
-    wp_enqueue_script('holderjs', 'https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js', false, null, true, null);
+  	wp_enqueue_script('holderjs', 'https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js', false, null, true, null);
 }}
 add_action('wp_enqueue_scripts', 'holderjs_front_page');
 
@@ -86,19 +86,19 @@ add_filter('get_avatar','replace_content');
 //Widgets
 if ( function_exists('register_sidebar') )
 register_sidebar(array(
-  'before_widget' => '<div class="card border-dark bg-light mb-3 card-drop">',
-  'after_widget' => '</div>',
-  'before_title' => '<div class="card-header"><h3 class="consolata">',
-  'after_title' => '</h3></div>',
+	'before_widget' => '<div class="card border-dark bg-light mb-3 card-drop">',
+	'after_widget' => '</div>',
+	'before_title' => '<div class="card-header"><h3 class="consolata">',
+	'after_title' => '</h3></div>',
 ));
 register_sidebar(array(
-    'name' => __( 'Footer Menu' , 'strapped_down' ),
-    'id' => 'strapped_down_footer_menu',
-    'description' => __( 'Footer Navigation' , 'strapped_down' ),
-    'before_widget' => '',
-    'after_widget'  => '',
-    'before_title' => '',
-    'after_title' => ''
+  	'name' => __( 'Footer Menu' , 'strapped_down' ),
+  	'id' => 'strapped_down_footer_menu',
+  	'description' => __( 'Footer Navigation' , 'strapped_down' ),
+  	'before_widget' => '',
+  	'after_widget'  => '',
+  	'before_title' => '',
+  	'after_title' => ''
 ));
 
 //Change WP Emails and email address away from "WordPress" as sender
@@ -158,7 +158,6 @@ function excerpt_read_more_link($output)
 add_filter('the_excerpt', 'excerpt_read_more_link');
 //end blog page read more button
 
-
 //begin pagination
 function wss_pagination($pages = '', $range = 1) {
      $showitems = ($range * 2)+1;
@@ -180,17 +179,17 @@ function wss_pagination($pages = '', $range = 1) {
             echo "<li class='page-item'>";
                 if($paged > 2 && $paged > $range+1 && $showitems < $pages) 
                   echo "<a class='page-link' aria-label='First Page' href='".get_pagenum_link(1)."'>
-                          <i class='fa fa-angle-double-left fa-lg' aria-hidden='true'></i>
-                          <span class='sr-only'>go to first page</span>
-                      </a>"
+                      		<i class='fa fa-angle-double-left fa-lg' aria-hidden='true'></i>
+                        	<span class='sr-only'>go to first page</span>
+                    	</a>"
             ;
             echo "</li>";
             echo "<li class='page-item'>";
                 if($paged > 1 && $showitems < $pages) 
                   echo "<a class='page-link' href='".get_pagenum_link($paged - 1)."'>
-                          <i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>
-                          <span class='sr-only'>go to previous page</span>
-                      </a>"
+                      		<i class='fa fa-angle-left fa-lg' aria-hidden='true'></i>
+                        	<span class='sr-only'>go to previous page</span>
+                  		</a>"
             ;
             echo "</li>";
             for ($i=1; $i <= $pages; $i++) {

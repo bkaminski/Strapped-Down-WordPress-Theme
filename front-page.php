@@ -7,7 +7,7 @@
 				<p class="text-center text-white dropping-bombs4"> >>> Coding is my art, lifestyle choice, and creative outlet.</p>
 					<div id="downArrow" class="text-center">
 						<a class="text-white" href="#here">
-							<i id="goDown" class="bk-bounce fas fa-chevron-circle-down fa-fw fa-4x"></i>
+							<i id="goDown" class="bk-bounce fas fa-chevron-circle-down fa-fw fa-3x"></i>
 							<br />
 							<small class="dropping-bombs5">much more...</small>
 						</a>

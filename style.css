@@ -417,31 +417,11 @@ background: black;
 background: rgba(0, 0, 0, 0.7);
 }
 
-/* #back-up i {
-font-size: 19px;
-position: relative;
-top: 20px;
-left: 16px;
-margin: 0;
--webkit-transition: all 0.3s ease;
-   -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-     -o-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-color: #ffffff;
-}
-*/
-
 #back-up:hover {
 background: rgba(0, 0, 0, 0.9);
 padding-top: 5px;
 }
 
-/* #back-up:hover i {
-margin-top: 0px;
-color: #ffffff;
-}
-*/
 #siCarousel {
 position: relative;
 width: 100;

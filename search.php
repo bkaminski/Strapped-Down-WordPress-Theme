@@ -25,6 +25,8 @@
 								<div class="alert alert-danger"><?php _e('<h4>Well, I could not find anything to match your search. Try again?<h4>'); ?></div>
 									<?php endif; ?>
 									<p><?php echo wss_pagination(); ?></p>
+									<br />
+									<br />
 								</div>
 		<div class="col-lg-3">
 			<?php get_sidebar(); ?>	

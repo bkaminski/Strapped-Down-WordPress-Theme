@@ -76,7 +76,7 @@ $(document).ready(function($){
     $('.page-id-1714').find('.btn-dark').addClass('btn-dark-home');
 
     //Bootstrap Comment Submit Button
-    $(this).find('#submit').addClass('btn btn-lg btn-dark btn-submit pr-5 pl-5');
+    $(this).find('#submit').addClass('btn btn-lg btn-dark btn-submit pr-5 pl-5 mt-3');
     //Widget Menu Buttons
     $('li.sitemapButton').find('a').addClass('btn btn-info btn-block btn-lg text-left');
     $("#footMenu").find('a').addClass('mb-3');
