@@ -40,9 +40,13 @@ $('.dropdown').on('hide.bs.dropdown', function(e){
         }
         if ($window.width() < 576) {
              $('.list-inline').removeClass('float-right');
+             $('.at-above-post').removeClass('text-center');
+             $('.at-below-post').addClass('text-center');
         }
         if ($window.width() >= 576) {
              $('.list-inline').addClass('float-right');
+             $('.at-above-post').addClass('text-center');
+             $('.at-below-post').addClass('text-center');
         }
     }
     // Execute on load
