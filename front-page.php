@@ -16,10 +16,10 @@
 		</div>
 		<div id="aboutInfo" class="col col-fluid">
 			<video autoplay="" id="video-background" muted="" plays-inline src="<?php echo get_template_directory_uri(); ?>/media/wilm-sunrise-01.mp4" type="video/mp4">
-					<!-- loading fallback -->
-					<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw text-white"></i>
-					<p class="text-center">Your browser may not support HTML5 video</p>
-					<span class="sr-only">Loading video of programmer typing code on a laptop.</span>
+				<!-- loading fallback -->
+				<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw text-white"></i>
+				<p class="text-center">Your browser may not support HTML5 video</p>
+				<span class="sr-only">Sunrise over the port of Wilmington Delaware.</span>
 			</video>
 	    	<div id="bgContainer" class="container pt-5">
 	      		<div class="row">
@@ -56,34 +56,4 @@
 				</div>
 			</div>
 		</div>
-		<script>
-			jQuery('a[href*="#"]')
-			  .not('[href="#"]')
-			  .not('[href="#0"]')
-			  .click(function(event) {
-			    if (
-			      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-			      && 
-			      location.hostname == this.hostname
-			    ) {
-			      var target = jQuery(this.hash);
-			      target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
-			      if (target.length) {
-			        event.preventDefault();
-			        jQuery('html, body').animate({
-			          scrollTop: target.offset().top
-			        }, 666, function() {
-			          var $target = jQuery(target);
-			          $target.focus();
-			          if ($target.is(":focus")) { 
-			            return false;
-			          } else {
-			            $target.attr('tabindex','-1'); 
-			            $target.focus();
-			          };
-			        });
-			      }
-			    }
-			  });
-		</script>
 <?php get_footer(); ?>

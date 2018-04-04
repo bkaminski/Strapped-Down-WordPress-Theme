@@ -50,8 +50,18 @@ function holderjs_front_page() {
     if ( is_front_page() ) //Holderjs on frontpage only
 {
   	wp_enqueue_script('holderjs', 'https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js', false, null, true, null);
+  	wp_enqueue_script('smoothscroll', get_template_directory_uri() . '/js/sscroll.min.js', array('jquery'), null, true, null );
 }}
 add_action('wp_enqueue_scripts', 'holderjs_front_page');
+
+//Load Smooth Scroll only on post pages
+function sscroll_post_page() {
+	if ( is_single() )
+{
+	wp_enqueue_script('smoothscroll', get_template_directory_uri() . '/js/sscroll.min.js', array('jquery'), null, true, null );
+}}
+add_action('wp_enqueue_scripts', 'sscroll_post_page');
+
 
 //Load ReactJS Scripts
 function reactjs_page() {
