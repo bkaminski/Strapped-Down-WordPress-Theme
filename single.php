@@ -7,11 +7,6 @@
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="<?php echo get_permalink(); ?>"/>
 							<h1 itemprop="headline"><?php the_title(); ?></h1>
-								<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
-								<br />
-									<script>
-										(adsbygoogle = window.adsbygoogle || []).push({});
-									</script>
 							<div id="featImg" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
 								<?php the_post_thumbnail(); ?>
 								<meta itemprop="url" content="<?php $thumb_id = get_post_thumbnail_id(); $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true); echo $thumb_url[0];?>">
@@ -50,11 +45,6 @@
 								<?php the_content(); ?>
 							</div>
 							<br />
-								<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
-								<br />
-								<script>
-									(adsbygoogle = window.adsbygoogle || []).push({});
-								</script>
 							<?php comments_template(); ?>
 								<p><small><em><?php the_tags('<span class="badge badge-success">Related:</span>&nbsp;<span itemprop="keywords">'); ?></span></em></small><br /></p>
 						<?php endwhile; else: ?>

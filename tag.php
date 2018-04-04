@@ -21,7 +21,7 @@
                       <?php endwhile; else: ?>
                           <div class="alert alert-danger"><?php _e('<h4>No article tags found for your query.<h4>'); ?></div>
                       <?php endif; ?>
-                  <p><?php echo wss_pagination(); ?></p>
+                  <?php echo wss_pagination(); ?>
                   <br />
                   <br />
         </div>

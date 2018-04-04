@@ -17,11 +17,7 @@
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <br />
                     <h1 class="articleTitle"><?php the_title(); ?></h1>
-                    <ins class="adsbygoogle mb-2 img-fluid" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
-                        <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-                <?php the_content(); ?>
+                	<?php the_content(); ?>
             </section>
             <?php endwhile; else: ?>
                 <p><?php _e('Whoops, something went horribly wrong. Please seek help immediately.'); ?></p>
@@ -74,10 +70,6 @@
                		<p>While I do accept bitcoin donations and payment for work, I do not offer "crypto-consulting" or "Bitcoin Consulting" services. I am also not interested in ICO offerings as trade/barter material. I still accept credit card and cash payments if you're unfamiliar with Bitcoin and cryptocurrency.</p>
                		<br />
                		<p>Please <a href="#" class="bk-contact-modal">contact me</a> with any questions.</p>
-                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
-                        <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
                </div>
             </div>
             <br />

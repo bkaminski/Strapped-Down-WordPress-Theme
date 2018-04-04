@@ -39,18 +39,9 @@
 	  	</div>
 		<div id="mainBody" class="pt-3">
 			<div class="container">
-				<ins class="adsbygoogle mb-2" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
-					<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-			
 				<h2 class="text-white">Recent Articles:</h2>
 					<?php include get_template_directory() . '/inc/cardStack.php'; ?>
 				<br />
-					<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
-						<script>
-							(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
 			</div>
 			<br />
 			<div id="siCarousel">

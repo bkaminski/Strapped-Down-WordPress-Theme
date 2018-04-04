@@ -11,11 +11,7 @@ get_header(); ?>
 				<div class="col-lg-12">
 				<br />
 					<h1>Ben's Other Blog:</h1>
-						<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
-							<script>
-								(adsbygoogle = window.adsbygoogle || []).push({});
-							</script>
-						<br />
+					<br />
 				</div>
 				<?php query_posts('post_type=post&paged='.$paged.'&cat=1&posts_per_page=3'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="col-lg-12 intContent">
@@ -44,11 +40,7 @@ get_header(); ?>
 					<?php endif; ?>
 				<div class="col-lg-12">
 					<?php echo wss_pagination(); ?>
-						<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
-						<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
-						<br />
+					<br />
 				</div>
 			</div>
 		</div>

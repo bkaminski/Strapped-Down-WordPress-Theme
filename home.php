@@ -4,10 +4,6 @@
 		<div class="col-lg-12">
 			<br />
 			<h1>Ben's Web Dev Blog:</h1>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5969127543696033" data-ad-slot="7837352339" data-ad-format="auto"></ins>
-					<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
 			<br />
 		</div>
 			<?php query_posts('post_type=post&paged='.$paged.'&cat=215,9'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
