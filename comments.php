@@ -1,10 +1,11 @@
 <?php 
-    $comments_args = array( 'label_submit'=>'Post Comment',
-    'title_reply'=>'<div class="alert alert-primary" role="alert"><h3 class="text-center display-4">Leave a Comment Below...</h3></div>', 
-    'comment_notes_before' => '<small class="comment-notes">' . __( '<em>Your email address will not be published.</em>' ) . ( $req ? $required_text : '*' ) . '</small>',
-    'comment_field' => '<br /><label for="comment">' . _x( '<span class="badge badge-warning">Leave a Comment</span>', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true" rows="10" class="form-control"></textarea>',
-    'author' => '<label for="author">' . __( 'Name', 'strapped_down' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . 'class="form-control"' . $aria_req . '',
-	);
+    $comments_args = array( 
+	'label_submit'=>'Post Comment',
+    	'title_reply'=>'<div class="alert alert-primary" role="alert"><h3 class="text-center display-4">Leave a Comment Below...</h3></div>', 
+    	'comment_notes_before' => '<small class="comment-notes">' . __( '<em>Your email address will not be published.</em>' ) . ( $req ? $required_text : '*' ) . '</small>',
+    	'comment_field' => '<br /><label for="comment">' . _x( '<span class="badge badge-warning">Leave a Comment</span>', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true" rows="10" class="form-control"></textarea>',
+    	'author' => '<label for="author">' . __( 'Name', 'strapped_down' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) . '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . 'class="form-control"' . $aria_req . '',
+    );
 comment_form($comments_args); ?>
 <a id="leaveComment" href="#"></a>
 <section>	
