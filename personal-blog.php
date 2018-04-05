@@ -35,13 +35,15 @@ get_header(); ?>
 					<h2 class="alert alert-dark">
 						<a class="alert-link" role="alert" href='<?php the_permalink(); ?>' rel='bookmark' title='<?php the_title(); ?>'><span itemprop="name"><?php the_title(); ?></span></a>
 					</h2>
+					<?php echo do_shortcode('[addthis tool="addthis_inline_share_toolbox"]'); ?>
 					<?php the_excerpt(); ?>
+
 				</div>
 			</div>
 			<hr class="mt-5" />
 		</div>
 			<?php endwhile; else: ?>
-			<p><?php _e('Whoops, something went horribly wrong. Please seek help immediately.'); ?></p>
+				<p><?php _e('Whoops, something went horribly wrong. Please seek help immediately.'); ?></p>
 			<?php endif; ?>
 		<div class="col-lg-12">
 			<?php echo wss_pagination(); ?>

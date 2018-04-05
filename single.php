@@ -33,16 +33,19 @@
 										</p>
 		      						</div>
 		      						<div class="card-footer">
-		      							<p class="text-center">
-											<a href="http://twitter.com/thebenkaminski" class="twitter-follow-button" data-show-count="true">Follow @thebenkaminski</a>
-										</p>
-										<p class="text-center">
-											<a class="github-button" href="https://github.com/bkaminski" data-size="large" aria-label="Follow @bkaminski on GitHub" target="_blank">Follow @bkaminski</a>
-										</p>
+		      							<p class="text-center mb-2">Sharing is appreciated!</p>
+		      							<?php echo do_shortcode('[addthis tool="addthis_inline_share_toolbox"]'); ?>
+
 		      						</div>
 		      					</div>
 							<div itemprop="articleBody">
 								<?php the_content(); ?>
+								
+								<div class="alert alert-success">
+									<p class="text-center mb-2">If you found this article helpful, please share and follow on social media.</p>
+		      						<?php echo do_shortcode('[addthis tool="addthis_inline_share_toolbox"]'); ?>
+
+								</div>
 							</div>
 							<br />
 							<?php comments_template(); ?>
