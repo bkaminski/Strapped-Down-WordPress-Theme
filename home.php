@@ -26,7 +26,6 @@
 					<h2 class="alert alert-dark">
 						<a class="alert-link" role="alert" href='<?php the_permalink(); ?>' rel='bookmark' title='<?php the_title(); ?>'><span itemprop="name"><?php the_title(); ?></span></a>
 					</h2>
-					<?php echo do_shortcode('[addthis tool="addthis_inline_share_toolbox"]'); ?>
 					<?php the_excerpt(); ?>
 				</div>
 			</div>
