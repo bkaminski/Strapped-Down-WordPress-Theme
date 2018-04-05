@@ -43,6 +43,7 @@ $('.dropdown').on('hide.bs.dropdown', function(e){
         }
         if ($window.width() >= 576) {
              $('.list-inline').addClass('float-right');
+             $('.addthis_inline_share_toolbox').addClass('text-center');
         }
     }
     // Execute on load
